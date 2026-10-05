@@ -186,7 +186,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x04_Socket"
+		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -206,7 +206,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Socket"
+			(property "Value" "Conn_01x04_Pin"
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -281,22 +281,54 @@
 					)
 				)
 			)
-			(symbol "Conn_01x04_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
+			(symbol "Conn_01x04_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -308,7 +340,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -320,7 +352,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -330,46 +362,10 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -5.588)
-					(mid -0.5058 -5.08)
-					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -379,7 +375,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -397,7 +393,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -415,7 +411,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -433,7 +429,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 5.08 -5.08 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1046,7 +1042,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 111.76) (xy 95.25 102.87)
+			(xy 90.17 111.76) (xy 90.17 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1056,7 +1052,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 107.95) (xy 97.79 102.87)
+			(xy 87.63 107.95) (xy 87.63 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1112,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 105.41) (xy 100.33 102.87)
+			(xy 85.09 105.41) (xy 85.09 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1155,7 +1151,7 @@
 		(uuid "fa7b31bc-929d-489f-88d4-485998d92bc3")
 	)
 	(label "POWER FOR SCREEN"
-		(at 95.25 111.76 0)
+		(at 90.17 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1175,7 +1171,7 @@
 		(uuid "5160bf0c-cb52-4fd3-9ead-77bd1df99144")
 	)
 	(label "SCL"
-		(at 97.79 107.95 0)
+		(at 87.63 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1215,7 +1211,7 @@
 		(uuid "c3cf083f-48a7-476d-a82b-c23b2de53c43")
 	)
 	(label "SDA"
-		(at 100.33 105.41 0)
+		(at 85.09 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1233,93 +1229,6 @@
 			(justify left bottom)
 		)
 		(uuid "d5597162-ccc6-476b-a37c-388e9bd55397")
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 95.25 97.79 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1bcf63e5-5225-48ea-ba5f-a064e24ff88a")
-		(property "Reference" "J1"
-			(at 92.456 95.758 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "screen pins"
-			(at 104.14 95.758 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 95.25 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "70ea4d17-088d-4d1a-9e89-098ba317a0fe")
-		)
-		(pin "3"
-			(uuid "cdd39e8f-0044-4e0f-b249-6c840b277d78")
-		)
-		(pin "2"
-			(uuid "eaa98c0e-e2c1-4e84-b3a1-14ca7ca6aa6c")
-		)
-		(pin "4"
-			(uuid "36fc6921-c581-4b93-81a4-3bffc0bbc719")
-		)
-		(instances
-			(project "earcase"
-				(path "/1f775478-036b-4310-9ecd-80f02f9901c8"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-C3-SMD")
@@ -1355,7 +1264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-ESP32-C3-SMD"
+		(property "Footprint" "New_XIAO_Series_Footprints:XIAO-ESP32-C3-SMD"
 			(at 102.362 112.014 0)
 			(hide yes)
 			(show_name no)
@@ -1458,6 +1367,92 @@
 			(project "earcase"
 				(path "/1f775478-036b-4310-9ecd-80f02f9901c8"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 90.17 97.79 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62c3b3f3-a1c4-4914-b36d-50debfe36896")
+		(property "Reference" "J1"
+			(at 88.9 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCREEN INPUT"
+			(at 88.9 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical"
+			(at 90.17 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 90.17 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "5c11a8eb-2168-45d8-8858-b76eca009a53")
+		)
+		(pin "2"
+			(uuid "29c630db-e048-4c90-b6b1-1f7e9b9ec427")
+		)
+		(pin "4"
+			(uuid "f06ee381-3c09-4062-92ce-e577d5776c57")
+		)
+		(pin "1"
+			(uuid "a8a182d1-2ae6-449a-acb7-ddbb03a5bf9b")
+		)
+		(instances
+			(project "earcase"
+				(path "/1f775478-036b-4310-9ecd-80f02f9901c8"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1575,7 +1570,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x02_P1.00mm_Vertical"
 			(at 139.7 120.65 0)
 			(hide yes)
 			(show_name no)
